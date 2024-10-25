@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Yeseva One", "Montserrat" ;
+    src: url();
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #041821;
+    color: white;
+}
+
+header{
+    background-color: #041821;
+    display: flex;
+    justify-content : space-between;
+    color: white;
+}
+
+.ligne{
+    color: #5e5e5e;
+}
+
+#vert{
+    color:#1bd79e;
+}
+
+.div1{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center
+}
+
+.div2{
+    margin: 0 150px;
+    text-align: left;
+}
+
+#couleur{
+    color: #1bd79e;
+}
+
+.div3{
+    margin: 0 150px;
+    text-align: left;
+}
+
+.div4{
+    display: flex;
+    justify-content : center;
+    gap : 40px;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.images img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+#portrait{
+    background-color: #1bd79e;
+}
+
+.p1{
+    display: flex;
+    justify-content : center;
+}
+.p2{
+    display: flex;
+    justify-content : center;
+}
+
+.div5{
+    font-size: 10px;
+    color: #5e5e5e;
+}
+
+
+@media (max-width: 1024px) {
+    .images {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        margin: 0 20px;
+    }
+    
+    .div2 {
+        margin: 0 20px;
+    }
+
+    .div3 {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .images {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 20px;
+    }
+
+    header {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px; 
+    }
+
+    .div1 {
+        margin-top: 10px; 
+    }
+
+    .div2 {
+        margin: 0 20px; 
+    }
+
+    .div3 {
+        margin: 0 20px; 
+    }
+
+    .div4 {
+        font-size: 9pt;
+        gap: 20px;
+    }
+}
